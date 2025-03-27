@@ -169,7 +169,7 @@ class CustomDropdownMenu(customtkinter.CTkFrame):
         
         submenu.bind("<Enter>", lambda e, sub=self: self.change_hover(self), add="+")
         submenuButtonSeed.bind("<Enter>", lambda e, sub=submenu, button=submenuButtonSeed: self.after(500, lambda: sub._show_submenu(self, button)), add="+")
-        submenuButtonSeed.bind("<Leave>", lambda e, sub=submenu: self.after(500, lambda: sub._left(self)), add="+")
+        # submenuButtonSeed.bind("<Leave>", lambda e, sub=submenu: self.after(500, lambda: sub._left(self)), add="+")
         
         submenuButtonSeed.configure(cursor=self.cursor)
         
